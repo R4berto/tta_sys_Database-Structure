@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order Form</title>
+	<link rel="stylesheet" type="text/css" href="tta_mkt.css">
+</head>
+<body>
+
+		<img src="static.png" width="100%">
+	<form class="form-container" action="tta_mkt_data.php" method="post">
+        <center>
+            <div class="form-title"></div>
+            <div class="form container">
+    <fieldset>
+	<legend><h2>Order Form</h2></legend>
+
+		
+		<td> <label for="pn">Product Name:</label> 
+<td> <select id="Product" name="Product"> 
+<option value="">Choose a Product</option> 
+<option value="newarrival.">New Arrival</option> 
+<option value="Pants">Pants</option> 
+<option value="hoodies">Hoodies</option> 
+<option value="shirts">Tshirts</option> 
+<option value="shorts">shorts</option>
+</select> <br> </td>
+		<br>
+		
+		<label for="qty"  class="form-input">Quantity:</label><br><br>
+	
+		<input type="checkbox" name="qty">pcs<br>
+		<input type="checkbox" name="qty">set<br>
+		<input type="checkbox" name="qty">bulk/bundle<br>
+
+
+		<br>
+
+		<label for="amount"  class="form-input">Amount:</label><br><br>
+		<input type="text" id="amount" name="amount" required  class="form-input"><br><br>
+
+	<td class="form-input">Mode Of Payment</td>
+		<td><select id="payment" name="payment">
+		<option>cash</option>
+		<option>cheque</option>
+		<option>e-wallet</option>
+		<option>bitcoin</option>
+		<option>gold bar</option>
+		<option>currency</option>
+	</select>
+	</td><br><br>
+
+	<th style="padding: 20px"> Delivery Date</th>
+	<td> <button style="margin-left: 28%;margin-bottom: 2px;" class="button" type="button" onclick="alert('Please Input your preferred Date of Delivery and we will do our best to comply.')">Important</button>
+	<input style="margin-left: 20%;width: 55%;" type="date" id="DeliveryDate" name="DeliveryDate" required></td>
+	<br><br>
+		
+		<label for"Remarks">Remarks:</label>
+		<textarea name="Remarks" rows="2.5" cols="30"> </textarea><br><br>
+
+		<tr><td><button class="form-button">Go Back </button></td></tr><br>
+<button class="form-button" type="submit">Submit</button>
+	</form>
+
+</body>
+</html>

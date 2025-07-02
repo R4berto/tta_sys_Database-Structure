@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title> Costumer Data </title>
+	<link rel="stylesheet" type="text/css" href="tta_mkt.css">
+</head>
+<body>
+   
+    <img src="static.png" width="100%">
+    <br><br>
+	<form class="form-container" action="tta_mkt_data.php" method="post">
+        <center>
+
+<table border="2">
+<caption><b><h1><p>Customer Data</p></h1><b></caption>
+<tr>
+    
+        <legend><div class="form-header"></div></legend>
+
+<th><p>First Name</p></th>
+<td><input type="text" id="FirstName" name="FirstName" class="form-input"></td>
+</tr>
+<tr>
+<th><p>Middle Name</p></th>
+<td><input type="text" id="MiddleName" name="MiddleName" class="form-input"></td>
+</tr>
+<tr>
+<th><p>Last Name</p></th>
+<td><input type="text" id="LastName" name="LastName" class="form-input"></td>
+</tr>
+<tr>
+<td> <label for="Suffix"class="form-label"><center><p>Suffix:</p><center></label> 
+<td> <select id="suffix" name="Suffix" class="form-input">
+<option value="">Choose a suffix</option> 
+<option value="Jr.">Jr.</option> 
+<option value="Sr.">Sr.</option> 
+<option value="II">II</option> 
+<option value="III">III</option> 
+<option value="IV">IV</option>
+</tr>
+<tr>
+
+<th colspan="4"><p>Contact Information</p></th>
+</tr>
+<tr>
+<th><p>Contact Number</p></th>
+<td><input type="text" id="CellphoneNumber" name="CellphoneNumber" class="form-input">
+</tr>
+<tr>
+<th><p>Email</p></th>
+<td><input type="text" id="Email" name="Email" class="form-input">
+</tr>
+<tr>
+<th><p>Address</p></th>
+<td><input type="text" id="Address" name="Address" class="form-input">
+</tr>
+<tr>
+<th><p>Company Website</p></th>
+<td><input type="text" id="Website" name="Website" class="form-input">
+</tr>
+<tr>
+<th><p>Company Name</p></th>
+<td><input type="text" id="CompanyName" name="CompanyName" class="form-input">
+</tr>
+<tr>
+        
+<td> <label for="Entrytype"> <b> <p> Entry Type: </p></b></label><br>
+<input type="radio" id="individual" name="Entrytype" value="individual" checked> 
+<label for="individual">Individual</label><br>
+<input type="radio" id="company" name="Entrytype" value="company"> 
+<label for="company">Company</label> </td> <br>
+
+<br>
+    
+<td> <label for="CompanyType"> <b><p> Company Type:</p></b></label>  <br>
+<input type="radio" id="manufacturing" name="CompanyType" value="Manufacturing">
+<label for="manufacturing">Manufacturing</label><br>
+<input type="radio" id="services" name="CompanyType" value="Services">
+<label for="services">Services</label> </td> <br>
+</tr>
+
+
+<tr>
+    <td><button class="form-button" type="button" onclick="alert('Please Double Check your Information.')">Important</button></td>
+    </tr>
+    
+    <tr align="center">
+    <td><button class="form-button" type="submit"> Next </td>
+    </tr>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
